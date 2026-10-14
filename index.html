@@ -25,6 +25,7 @@
 :root { --c-canvas: #f3f3ee; --c-surface: #ffffff; --c-ink: #1e221f; --c-ink-soft: #5b625b; --c-accent: #4f6b55; --c-accent-ink: #f4f8f2; --c-accent-deep: #3c5642; --f-display: "Tenor Sans", "Georgia", serif; --f-text: "Onest", "Segoe UI", system-ui, sans-serif; --h1k: 1; }
 </style>
 <link rel="stylesheet" href="style-prod.css">
+<link rel="stylesheet" href="gr-prices.css">
 </head>
 <body class="s-prod" id="top" data-wa="79080583040" data-tg="greenroom_nails2" data-max="">
 <header class="s-bar" data-s-bar>
@@ -71,46 +72,73 @@
   </section>
 
   <section class="s-section s-reveal" id="prices">
-    <header class="s-section__head"><h2>Цена по уровню мастера</h2><p>Прайс «Green Room» с Яндекс Карт на одном экране: маникюр, педикюр, дополнительные услуги, уход и дети. У каждой услуги – цена для каждого уровня мастера и пометка, входит ли снятие.</p></header>
-    <div class="s-board"><div class="s-board__group">
-      <h3 class="s-board__title">Маникюр</h3>
-      <ul class="s-board__list">
-        <li class="s-board__row"><span class="s-board__name">Маникюр без покрытия<em>мастер маникюра 1 300 · универсальный мастер 1 800 · ТОП-мастер 2 100</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 1 300 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Маникюр с гель-лаком<em>стажёр 500 (по постоянной акции) · мастер маникюра 2 000 · универсальный мастер 2 900 · ТОП-мастер 3 200; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 500 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Маникюр с гель-лаком Luxio<em>универсальный мастер 3 200 · ТОП-мастер 3 500; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 200 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Французский маникюр с гель-лаком<em>универсальный мастер 3 200 · ТОП-мастер 3 600; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 200 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Маникюр с обычным лаком<em>мастер маникюра 1 600 · универсальный 2 300 · ТОП-мастер 2 700 · лак Hermes у ТОП-мастера 3 600; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 1 600 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Пилочный маникюр без покрытия<em>универсальный мастер 2 100 · ТОП-мастер 2 300; уход за натуральными ногтями</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 2 100 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Пилочный маникюр с гель-лаком<em>универсальный мастер 3 200 · ТОП-мастер 3 500; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 200 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Пилочный маникюр с френчем и гель-лаком<em>универсальный мастер 3 300 · ТОП-мастер 3 900; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 300 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Пилочный маникюр с обычным лаком<em>универсальный мастер 2 600 · ТОП-мастер 2 800 · лак Hermes у ТОП-мастера 3 800; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 2 600 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Лечебный маникюр<em>мастер маникюра 1 600 · универсальный мастер 2 300 · ТОП-мастер 2 600; снятие геля или гель-лака, маникюр и лечебное покрытие на выбор</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 1 600 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Японский маникюр<em>универсальный мастер 2 200 · ТОП-мастер 2 400; уходовая процедура для натуральных ногтей, про снятие уточняйте при записи</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 2 200 ₽</span></li>
-      </ul>
+    <header class="s-section__head"><h2>Цена по уровню мастера</h2><p>Выберите раздел – внутри весь прайс с карточки на Яндекс Картах. У каждой услуги цена для каждого уровня мастера и пометка, входит ли снятие.</p></header>
+    <div class="gr-menu">
+      <button class="gr-tile" type="button" id="gr-tab-0" aria-controls="gr-panel-0" aria-expanded="true">
+        <img src="assets/tile-manikyur.webp" alt="Нюдовый маникюр, короткий миндаль" width="720" height="960" loading="lazy">
+        <span class="gr-tile__body"><span class="gr-tile__name">Маникюр</span><span class="gr-tile__meta"><span>от 500 ₽</span><span class="gr-tile__count">11 услуг</span></span></span>
+        <span class="gr-tile__sign" aria-hidden="true"></span>
+      </button>
+      <button class="gr-tile" type="button" id="gr-tab-1" aria-controls="gr-panel-1" aria-expanded="false">
+        <img src="assets/tile-pedikyur.webp" alt="Педикюрное кресло и растение в кабинете студии" width="720" height="960" loading="lazy">
+        <span class="gr-tile__body"><span class="gr-tile__name">Педикюр</span><span class="gr-tile__meta"><span>от 2 100 ₽</span><span class="gr-tile__count">15 услуг</span></span></span>
+        <span class="gr-tile__sign" aria-hidden="true"></span>
+      </button>
+      <button class="gr-tile" type="button" id="gr-tab-2" aria-controls="gr-panel-2" aria-expanded="false">
+        <img src="assets/tile-dop.webp" alt="Подарочный сертификат Green Room, кружка и лаки" width="720" height="960" loading="lazy">
+        <span class="gr-tile__body"><span class="gr-tile__name">Дополнительно</span><span class="gr-tile__meta"><span>от 100 ₽</span><span class="gr-tile__count">13 услуг</span></span></span>
+        <span class="gr-tile__sign" aria-hidden="true"></span>
+      </button>
+      <button class="gr-tile" type="button" id="gr-tab-3" aria-controls="gr-panel-3" aria-expanded="false">
+        <img src="assets/tile-uhod.webp" alt="Арка в зону ожидания студии с лаунж-диваном" width="720" height="960" loading="lazy">
+        <span class="gr-tile__body"><span class="gr-tile__name">Уход и дети</span><span class="gr-tile__meta"><span>от 900 ₽</span><span class="gr-tile__count">7 услуг</span></span></span>
+        <span class="gr-tile__sign" aria-hidden="true"></span>
+      </button>
     </div>
-<div class="s-board__group">
-      <h3 class="s-board__title">Педикюр</h3>
-      <ul class="s-board__list">
-        <li class="s-board__row"><span class="s-board__name">Педикюр без покрытия<em>универсальный мастер 2 700 · ТОП-мастер 3 200</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 2 700 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Педикюр с гель-лаком<em>универсальный мастер 3 500 · ТОП-мастер 4 000; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 500 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Педикюр с гель-лаком Luxio<em>универсальный мастер 3 800 · ТОП-мастер 4 300; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 800 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Педикюр с френчем и гель-лаком<em>универсальный мастер 3 900 · ТОП-мастер 4 400; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 900 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Педикюр с обычным лаком<em>универсальный мастер 3 200 · ТОП-мастер 3 700 · лак Hermes у ТОП-мастера 4 700; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 200 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Педикюр пальцев или стоп без покрытия<em>универсальный мастер 2 100 · ТОП-мастер 2 600; обработка пальцев либо стоп на выбор</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 2 100 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Педикюр пальцев с гель-лаком<em>универсальный мастер 3 000 · ТОП-мастер 3 400; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 000 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Педикюр пальцев с френчем и гель-лаком<em>универсальный мастер 3 300 · ТОП-мастер 3 800; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 300 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Педикюр пальцев с обычным лаком<em>универсальный мастер 2 600 · ТОП-мастер 3 100 · лак Hermes у ТОП-мастера 4 100; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 2 600 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Педикюр KART без покрытия<em>универсальный мастер 3 200 · ТОП-мастер 3 700; педикюр по системе KART</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 200 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Педикюр KART с гель-лаком<em>универсальный мастер 4 000 · ТОП-мастер 4 500; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 4 000 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Педикюр KART с френчем и гель-лаком<em>универсальный мастер 4 400 · ТОП-мастер 4 900; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 4 400 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Педикюр KART с обычным лаком<em>универсальный мастер 3 700 · ТОП-мастер 4 200; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 700 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Лечебный педикюр<em>универсальный мастер 3 200 · ТОП-мастер 3 700; снятие геля или гель-лака, педикюр и лечебное покрытие на выбор</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 200 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Японский педикюр<em>универсальный мастер 3 200 · ТОП-мастер 3 700; уходовая процедура для ногтей ног</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 200 ₽</span></li>
+    <div class="gr-panel is-open" id="gr-panel-0" role="region" aria-labelledby="gr-tab-0">
+      <div class="gr-panel__in">
+        <h3 class="gr-panel__title">Маникюр</h3>
+        <ul class="s-board__list gr-list">
+        <li class="s-board__row"><span class="s-board__name">Маникюр без покрытия<em>мастер маникюра 1 300 · универсальный мастер 1 800 · ТОП-мастер 2 100</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 1 300 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Маникюр с гель-лаком<em>стажёр 500 (по постоянной акции) · мастер маникюра 2 000 · универсальный мастер 2 900 · ТОП-мастер 3 200; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 500 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Маникюр с гель-лаком Luxio<em>универсальный мастер 3 200 · ТОП-мастер 3 500; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 200 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Французский маникюр с гель-лаком<em>универсальный мастер 3 200 · ТОП-мастер 3 600; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 200 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Маникюр с обычным лаком<em>мастер маникюра 1 600 · универсальный 2 300 · ТОП-мастер 2 700 · лак Hermes у ТОП-мастера 3 600; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 1 600 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Пилочный маникюр без покрытия<em>универсальный мастер 2 100 · ТОП-мастер 2 300; уход за натуральными ногтями</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 2 100 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Пилочный маникюр с гель-лаком<em>универсальный мастер 3 200 · ТОП-мастер 3 500; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 200 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Пилочный маникюр с френчем и гель-лаком<em>универсальный мастер 3 300 · ТОП-мастер 3 900; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 300 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Пилочный маникюр с обычным лаком<em>универсальный мастер 2 600 · ТОП-мастер 2 800 · лак Hermes у ТОП-мастера 3 800; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 2 600 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Лечебный маникюр<em>мастер маникюра 1 600 · универсальный мастер 2 300 · ТОП-мастер 2 600; снятие геля или гель-лака, маникюр и лечебное покрытие на выбор</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 1 600 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Японский маникюр<em>универсальный мастер 2 200 · ТОП-мастер 2 400; уходовая процедура для натуральных ногтей, про снятие уточняйте при записи</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 2 200 ₽</span></li>
       </ul>
+      </div>
     </div>
-<div class="s-board__group">
-      <h3 class="s-board__title">Дополнительно</h3>
-      <ul class="s-board__list">
+    <div class="gr-panel" id="gr-panel-1" role="region" aria-labelledby="gr-tab-1">
+      <div class="gr-panel__in">
+        <h3 class="gr-panel__title">Педикюр</h3>
+        <ul class="s-board__list gr-list">
+        <li class="s-board__row"><span class="s-board__name">Педикюр без покрытия<em>универсальный мастер 2 700 · ТОП-мастер 3 200</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 2 700 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Педикюр с гель-лаком<em>универсальный мастер 3 500 · ТОП-мастер 4 000; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 500 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Педикюр с гель-лаком Luxio<em>универсальный мастер 3 800 · ТОП-мастер 4 300; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 800 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Педикюр с френчем и гель-лаком<em>универсальный мастер 3 900 · ТОП-мастер 4 400; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 900 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Педикюр с обычным лаком<em>универсальный мастер 3 200 · ТОП-мастер 3 700 · лак Hermes у ТОП-мастера 4 700; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 200 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Педикюр пальцев или стоп без покрытия<em>универсальный мастер 2 100 · ТОП-мастер 2 600; обработка пальцев либо стоп на выбор</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 2 100 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Педикюр пальцев с гель-лаком<em>универсальный мастер 3 000 · ТОП-мастер 3 400; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Педикюр пальцев с френчем и гель-лаком<em>универсальный мастер 3 300 · ТОП-мастер 3 800; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 300 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Педикюр пальцев с обычным лаком<em>универсальный мастер 2 600 · ТОП-мастер 3 100 · лак Hermes у ТОП-мастера 4 100; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 2 600 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Педикюр KART без покрытия<em>универсальный мастер 3 200 · ТОП-мастер 3 700; педикюр по системе KART</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 200 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Педикюр KART с гель-лаком<em>универсальный мастер 4 000 · ТОП-мастер 4 500; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 4 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Педикюр KART с френчем и гель-лаком<em>универсальный мастер 4 400 · ТОП-мастер 4 900; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 4 400 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Педикюр KART с обычным лаком<em>универсальный мастер 3 700 · ТОП-мастер 4 200; снятие входит</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 700 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Лечебный педикюр<em>универсальный мастер 3 200 · ТОП-мастер 3 700; снятие геля или гель-лака, педикюр и лечебное покрытие на выбор</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 200 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Японский педикюр<em>универсальный мастер 3 200 · ТОП-мастер 3 700; уходовая процедура для ногтей ног</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">от 3 200 ₽</span></li>
+      </ul>
+      </div>
+    </div>
+    <div class="gr-panel" id="gr-panel-2" role="region" aria-labelledby="gr-tab-2">
+      <div class="gr-panel__in">
+        <h3 class="gr-panel__title">Дополнительно</h3>
+        <ul class="s-board__list gr-list">
         <li class="s-board__row"><span class="s-board__name">Покрытие гель-лаком без маникюра<em>отдельная услуга</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 200 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Френч-покрытие гель-лаком без маникюра<em>отдельная услуга</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 500 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Покрытие обычным лаком без маникюра<em>отдельная услуга</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 000 ₽</span></li>
@@ -119,25 +147,28 @@
         <li class="s-board__row"><span class="s-board__name">Снятие гель-лака перед процедурой<em>без последующего покрытия; отдельной услугой – 500 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">300 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Снятие обычного лака перед процедурой<em>без последующего покрытия; отдельной услугой – 200 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">100 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Ремонт ногтя при процедуре<em>цена с третьего ремонтируемого ногтя; отдельной услугой – 200 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">100 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Донаращивание или поднятие клюющего ногтя<em>один ноготь 200 ₽; десять ногтей – 1 600 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">200 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Донаращивание или поднятие клюющего ногтя<em>один ноготь 200 ₽; десять ногтей – 1 600 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">200 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Простой дизайн<em>блёстки, втирка, ленты, фольга, слайдер, пуффинг или 1–3 страз: один ноготь 100 ₽, десять – 800 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">100 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Сложный дизайн<em>стемпинг, градиент кистью, роспись, плёнки, более 3 страз: один ноготь 200 ₽, десять – 1 600 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">200 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Сложный дизайн<em>стемпинг, градиент кистью, роспись, плёнки, более 3 страз: один ноготь 200 ₽, десять – 1 600 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">200 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Покрытие Luxio – доплата<em>при выборе подходящей услуги маникюра или педикюра</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">300 ₽<small> доплата</small></span></li>
         <li class="s-board__row"><span class="s-board__name">Покрытие плёнками – доплата<em>при выборе подходящей услуги маникюра или педикюра</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">300 ₽<small> доплата</small></span></li>
       </ul>
+      </div>
     </div>
-<div class="s-board__group">
-      <h3 class="s-board__title">Уход, массаж и дети</h3>
-      <ul class="s-board__list">
+    <div class="gr-panel" id="gr-panel-3" role="region" aria-labelledby="gr-tab-3">
+      <div class="gr-panel__in">
+        <h3 class="gr-panel__title">Уход и дети</h3>
+        <ul class="s-board__list gr-list">
         <li class="s-board__row"><span class="s-board__name">SPA-уход для рук Christina Fitzgerald<em>отдельная уходовая процедура</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 500 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Массаж рук, 30 минут<em>при процедуре 1 000 ₽; отдельной услугой 1 200 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 000 ₽</span></li>
-        <li class="s-board__row"><span class="s-board__name">Массаж ног, 30 минут<em>при процедуре 1 000 ₽; отдельной услугой 1 200 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Массаж рук, 30 минут<em>при процедуре 1 000 ₽; отдельной услугой 1 200 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 000 ₽</span></li>
+        <li class="s-board__row"><span class="s-board__name">Массаж ног, 30 минут<em>при процедуре 1 000 ₽; отдельной услугой 1 200 ₽</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 000 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Детский маникюр без покрытия<em>без лака</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">900 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Детский маникюр с лаком<em>обычный лак</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 200 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Детский педикюр без покрытия<em>без лака</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">900 ₽</span></li>
         <li class="s-board__row"><span class="s-board__name">Детский педикюр с лаком<em>обычный лак</em></span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 200 ₽</span></li>
       </ul>
-    </div></div>
+      </div>
+    </div>
     <p class="s-note">Цены с карточки «Green Room» на Яндекс Картах, на карточке обновлены 2 сентября 2026 (источник: представитель организации), сняты 14 октября 2026. «Универсальный мастер» – мастер маникюра и педикюра, «ТОП-мастер» – с опытом от 5 лет. Время процедур на карточке не указано: уточните при записи.</p>
   </section>
 
@@ -198,6 +229,7 @@
 </main>
 <footer class="s-foot"><p>Green Room · Челябинск</p><p>Маникюр, педикюр, гель-лак, лечебный и японский маникюр, KART, Luxio, SPA-уход, детский маникюр</p></footer>
 <nav class="s-dock" aria-label="Быстрая связь"><a class="s-btn" href="#widget">Записаться онлайн</a><a class="s-btn s-btn--ghost" href="tel:+79080583040">Позвонить</a></nav>
+<script src="gr-prices.js" defer></script>
 <script src="style.js" defer></script>
 </body>
 </html>

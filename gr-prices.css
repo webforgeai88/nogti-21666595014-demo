@@ -1,0 +1,55 @@
+/* Green Room: прайс плашками. Цвета, шрифты и радиусы берутся из палитры сайта (style-prod.css). */
+.gr-menu { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+
+.gr-tile { position: relative; display: flex; flex-direction: column; padding: 0; text-align: left; cursor: pointer; overflow: hidden;
+  font: inherit; color: inherit; background: var(--c-surface); border: 1px solid var(--hair); border-radius: var(--r);
+  transition: border-color .2s ease, box-shadow .25s ease, transform .25s ease; }
+.gr-tile img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; transition: transform .6s cubic-bezier(.2, .7, .2, 1); }
+.gr-tile__body { display: grid; gap: 2px; padding: 14px 52px 16px 16px; }
+.gr-tile__name { font: 700 1.2rem/1.15 var(--f-display); }
+.gr-tile__meta { font-size: .86rem; color: var(--c-ink-soft); font-variant-numeric: tabular-nums; }
+.gr-tile__count::before { content: " · "; white-space: pre; }
+.gr-tile:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--c-accent) 45%, var(--hair)); }
+.gr-tile:hover img { transform: scale(1.03); }
+.gr-tile[aria-expanded="true"] { border-color: var(--c-accent); box-shadow: 0 0 0 1px var(--c-accent), 0 16px 36px -22px color-mix(in srgb, var(--c-accent) 60%, transparent); }
+
+/* плюс превращается в минус, когда раздел раскрыт */
+.gr-tile__sign { position: absolute; right: 14px; bottom: 16px; width: 28px; height: 28px; border-radius: 50%;
+  background: var(--tint); transition: background .2s ease; }
+.gr-tile__sign::before, .gr-tile__sign::after { content: ""; position: absolute; left: 50%; top: 50%; width: 12px; height: 2px; margin: -1px 0 0 -6px;
+  background: var(--c-accent-deep, var(--c-accent)); border-radius: 2px; transition: transform .25s ease; }
+.gr-tile__sign::after { transform: rotate(90deg); }
+.gr-tile[aria-expanded="true"] .gr-tile__sign { background: var(--c-accent); }
+.gr-tile[aria-expanded="true"] .gr-tile__sign::before { background: var(--c-accent-ink); }
+.gr-tile[aria-expanded="true"] .gr-tile__sign::after { background: var(--c-accent-ink); transform: rotate(0deg); }
+
+/* раскрывающаяся панель с прайсом раздела */
+.gr-panel { display: grid; grid-template-rows: 1fr; }
+.gr-panel__in { min-height: 0; overflow: hidden; }
+.gr-js .gr-panel { grid-template-rows: 0fr; visibility: hidden; transition: grid-template-rows .4s cubic-bezier(.2, .7, .2, 1), visibility 0s linear .4s; }
+.gr-js .gr-panel.is-open { grid-template-rows: 1fr; visibility: visible; transition-delay: 0s; }
+.gr-panel.is-open .gr-panel__in { margin-top: 16px; padding: 22px clamp(16px, 3vw, 32px) 10px; background: var(--c-surface);
+  border: 1px solid var(--hair); border-radius: var(--r); }
+.gr-js .gr-panel .gr-panel__in { padding-top: 0; padding-bottom: 0; border-width: 0; }
+.gr-js .gr-panel.is-open .gr-panel__in { padding-top: 22px; padding-bottom: 10px; border-width: 1px; }
+.gr-panel__title { font-size: 1.4rem; margin-bottom: 4px; }
+.gr-list { columns: 2 440px; column-gap: 48px; }
+.gr-list .s-board__row { break-inside: avoid; }
+
+@media (max-width: 900px) {
+  .gr-menu { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .gr-tile img { aspect-ratio: 1 / 1; }
+}
+@media (max-width: 640px) {
+  .gr-tile__meta span { display: block; }
+  .gr-tile__count::before { content: none; }
+}
+@media (max-width: 420px) {
+  .gr-tile__body { padding: 10px 44px 12px 12px; }
+  .gr-tile__name { font-size: 1.05rem; }
+  .gr-tile__sign { right: 10px; bottom: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gr-tile, .gr-tile img, .gr-tile__sign::before, .gr-tile__sign::after, .gr-js .gr-panel { transition: none !important; }
+  .gr-tile:hover, .gr-tile:hover img { transform: none; }
+}
