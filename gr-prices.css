@@ -53,3 +53,6 @@
   .gr-tile, .gr-tile img, .gr-tile__sign::before, .gr-tile__sign::after, .gr-js .gr-panel { transition: none !important; }
   .gr-tile:hover, .gr-tile:hover img { transform: none; }
 }
+
+/* заголовок первого экрана: слова не рвём переносом («Челябинске» целиком) */
+.s-hero h1 { hyphens: manual; overflow-wrap: normal; }
